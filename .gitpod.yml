@@ -12,6 +12,7 @@ tasks:
      lando composer install
      lando composer require drush/config-extra
      chmod ug+w -R /workspace/lando-drupal-gitpod/web/sites/default
+     lando drush si -y --account-pass=VcUx2LtiB6 --site-name='drupal_govt_policy' --db-url=mysql://dgp:drupgovtpol@database/drupal_govt_policy_db minimal
 
 
 vscode:
