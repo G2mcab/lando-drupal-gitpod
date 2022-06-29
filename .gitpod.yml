@@ -1,5 +1,5 @@
-image:
-  file: .gitpod.dockerfile
+image: devwithlando/gitpod:1
+
 
 tasks:
  - name: Setup Drupal Dev Env
