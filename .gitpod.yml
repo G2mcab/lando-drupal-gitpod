@@ -10,6 +10,9 @@ tasks:
      lando start
      lando composer require drush/drush
      lando composer install
+     chmod ug+w -R /workspace/lando-drupal-gitpod/web/sites/default
+     lando drush si -y --account-pass=admin --site-name='lando_drupal9' --db-url=mysql://drupal9:drupal9@database/drupal9 demo_umami
+
 
 
 ports:
