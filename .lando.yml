@@ -1,12 +1,13 @@
 name: lando-drupal-gitpod
 recipe: drupal9
 config:
-  webroot: web
-
+ webroot: web
+ 
 services:
-  myservice:
-    type: phpmyadmin
-    creds:
-      user: mysql -> dgp
-      password: mysql -> drupgovtpol
-      database: database -> drupal_govt_policy
+ database:
+   creds:
+     database: drupal_govt_policy
+     user: dgp
+     password: drupgovtpol
+ myservice:
+   type: phpmyadmin
