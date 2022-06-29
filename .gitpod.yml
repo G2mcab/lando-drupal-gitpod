@@ -14,14 +14,6 @@ tasks:
      chmod ug+w -R /workspace/lando-drupal-gitpod/web/sites/default
 
 
-ports:
-  - port: 3306
-    onOpen: ignore
-  - port: 80
-    onOpen: ignore
-  - port: 443
-    onOpen: ignore
-
 vscode:
   extensions:
     - felixfbecker.php-debug
