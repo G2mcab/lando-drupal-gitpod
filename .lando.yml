@@ -6,3 +6,7 @@ config:
 services:
   myservice:
     type: phpmyadmin
+    creds:
+      user: mysql -> dgp
+      password: mysql -> drupgovtpol
+      database: database -> drupal_govt_policy
